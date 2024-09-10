@@ -12,7 +12,7 @@ def delivery_callback(err, msg):
     if err:
         print(f'Message failed delivery: {err}')
     else:
-        print(f'Message was delivered to {msg.topic} topic')
+        print(f'Message was delivered to {msg.topic()} topic')
 
 
 def main():
